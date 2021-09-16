@@ -111,6 +111,15 @@
 
 
 @media screen and (max-width: 600px){
+    .body-heading{
+        font-size:25px;
+    }
+
+    .body-description{
+
+        font-size: 16px;
+    }
+
     .button-container{
 
         margin-top: 3vh;
@@ -136,6 +145,19 @@
         font-weight: 500;
         font-size: large;
 
+    }
+    .card-title{
+
+        font-size: 20px !important;
+        line-height: 72px !important;
+        
+    }
+    
+    
+    .card-text{
+        
+        font-size: 16px !important;
+        line-height: 35px   !important;
     }
 
 }
