@@ -109,6 +109,13 @@
     background-color: #383b4f !important;
 }
 
+span {
+    float: left;
+    content: "\27F6";
+    padding-top: 5vh;
+    font-size: 50px;
+
+  }
 
 @media screen and (max-width: 600px){
     .body-heading{

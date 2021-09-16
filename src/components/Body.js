@@ -22,6 +22,7 @@ class Body extends Component{
                                 <Card.Title className="card-title">Create Room</Card.Title>
                                 <Card.Text className="card-text">Play along with <br/>your friends</Card.Text>
                                 <i class="fal fa-long-arrow-right"></i>
+                                <p><span>&#10230;</span></p>
                             </Card.Body>    
                         </Card>
                         <Card className="card2 cards">
@@ -29,6 +30,7 @@ class Body extends Component{
                                 <Card.Title className="card-title">Join Room</Card.Title>
                                 <Card.Text className="card-text">Play along with <br/>your friends</Card.Text>
                                 <i class="fal fa-long-arrow-right"></i>
+                                <p><span>&#10230;</span></p>
                             </Card.Body>    
                         </Card>
                     </div>
