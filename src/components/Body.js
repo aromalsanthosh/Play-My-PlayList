@@ -31,9 +31,9 @@ class Body extends Component{
                                 
                             </Card.Body>  
                         </Card>
-                        <div class="how-to-play">HOW TO PLAY</div>
+                        
                     </div>
-                    
+                    <div class="how-to-play">HOW TO PLAY</div>
                     <div class="image"> </div>
                 </div>
             </react.Fragment>
