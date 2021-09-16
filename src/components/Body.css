@@ -37,6 +37,8 @@
     flex-wrap: wrap;
     gap:3vw;
     margin-top: 15vh;
+    padding-left: 50px;
+
 }
 
 .card-title{
@@ -109,7 +111,7 @@
     background-color: #383b4f !important;
 }
 
-span {
+span{
     float: left;
     content: "\27F6";
     padding-top: 5vh;

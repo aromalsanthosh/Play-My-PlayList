@@ -20,18 +20,16 @@ class Body extends Component{
                         <Card className="card1 cards">
                             <Card.Body>
                                 <Card.Title className="card-title">Create Room</Card.Title>
-                                <Card.Text className="card-text">Play along with <br/>your friends</Card.Text>
-                                <i class="fal fa-long-arrow-right"></i>
-                                <p><span>&#10230;</span></p>
+                                <Card.Text className="card-text">Play along with <br/>your friends<br/> &#10230;</Card.Text>
+
                             </Card.Body>    
                         </Card>
                         <Card className="card2 cards">
                             <Card.Body>
                                 <Card.Title className="card-title">Join Room</Card.Title>
-                                <Card.Text className="card-text">Play along with <br/>your friends</Card.Text>
-                                <i class="fal fa-long-arrow-right"></i>
-                                <p><span>&#10230;</span></p>
-                            </Card.Body>    
+                                <Card.Text className="card-text">Play along with <br/>your friends<br/> &#10230;</Card.Text>
+                                
+                            </Card.Body>  
                         </Card>
                     </div>
                     <div class="how-to-play">HOW TO PLAY</div>
