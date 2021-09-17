@@ -131,6 +131,15 @@ span{
 
   }
 
+.image {
+    display: flex;
+    justify-content: center;
+ }
+ img{
+     margin-top: 20px;
+     width: 900px;
+     height: 160px;
+ }
 @media screen and (max-width: 600px){
     .body-heading{
         font-size:25px;
