@@ -31,6 +31,7 @@ class Body extends Component{
                                 
                             </Card.Body>  
                         </Card>
+                        
                     </div>
                     <div class="how-to-play">HOW TO PLAY</div>
                     <div class="image"> </div>
