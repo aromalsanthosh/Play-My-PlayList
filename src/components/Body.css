@@ -143,7 +143,7 @@ span{
     }
 
     .button-container{
-        margin-right: 35px;
+      
         margin-top: 3vh;
         padding-left: 20px;
         padding-right: 20px;
@@ -163,7 +163,7 @@ span{
     }
     
     .how-to-play{
-        height: 50px;
+        height: 45px;
         width:180px;
         margin-top: 2vh;
         font-weight: 500;
