@@ -13,7 +13,7 @@ class Body extends Component{
             <react.Fragment>
                 <div class="body-wrapper">
                     <div class="body-heading">Play My Playlist</div>
-                    
+                    <hr/>
                     <div class="body-description">A multiplayer Social Game to play along with your friends in a private room</div>
                     <div  class="button-container">
                         
