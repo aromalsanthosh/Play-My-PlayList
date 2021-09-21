@@ -19,6 +19,11 @@
     padding-right: 10px;
     
 }
+.home-logo{
+    margin-top: 2.5%;
+    width: 25vw;
+    height: auto;
+}
 
 hr{
     height: 4px !important;
@@ -47,7 +52,7 @@ hr{
     justify-content: center;
     flex-wrap: wrap;
     gap:3vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -134,18 +139,22 @@ span{
 .image {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+     width: 100vw;
+     height: 80px;
  }
- img{
-     margin-top: 20px;
-     width: 900px;
-     height: 160px;
- }
+
 @media screen and (max-width: 600px){
     .body-heading{
         font-size:25px;
     }
+    .home-logo{
+        width: 65vw;
+        height: auto;
+    }
 
     .body-description{
+        margin-top: 1vh;
         padding-left: 10%;
         padding-right: 10%;
         font-size: 16px;
@@ -192,22 +201,6 @@ span{
         font-size: 16px !important;
         line-height: 35px   !important;
     }
-    .how-to-play{
-        display: flex;
-        justify-content: center;
-        height: 70px;
-        width:200px;
-        background-color: #26293E;
-        color: white;
-        margin-top: 7vh;
-        margin-bottom: 3vh;
-        border-radius: .25rem;
-        font-weight: 600;
-        font-size: 20px;
-        padding-top: 3.4vh;
-        font-family: 'Poppins', sans-serif;
-        border-radius: 10px;
-    
-    }
+   
 
 }

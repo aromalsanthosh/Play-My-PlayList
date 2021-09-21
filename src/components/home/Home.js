@@ -1,7 +1,9 @@
 import react,{Component} from "react";
 import { Button ,Card } from "react-bootstrap"
-import './Body.css'
-import equ from '../assets/equ.jpg';
+import './Home.css'
+import { NavLink } from "react-router-dom";
+import equ from '../../assets/equ.jpg';
+import logo from '../../assets/PMPL-LOGO.png'
 
 class Body extends Component{
     constructor(props){
@@ -12,18 +14,22 @@ class Body extends Component{
         return(
             <react.Fragment>
                 <div class="body-wrapper">
-                    <div class="body-heading">Play My Playlist</div>
+                    
+                        <img className="home-logo" src={logo} alt="LOGO"/>
+                    
                     <hr/>
                     <div class="body-description">A multiplayer Social Game to play along with your friends in a private room</div>
                     <div  class="button-container">
-                        
-                        <Card className="card1 cards">
+                        <NavLink to='/create-room'>
+                        <Card className="card1 cards" >
                             <Card.Body>
                                 <Card.Title className="card-title">Create Room</Card.Title>
                                 <Card.Text className="card-text">Play along with <br/>your friends<br/> &#10230;</Card.Text>
 
                             </Card.Body>    
                         </Card>
+                        </NavLink>
+                        <NavLink to='/join-room'>
                         <Card className="card2 cards">
                             <Card.Body>
                                 <Card.Title className="card-title">Join Room</Card.Title>
@@ -31,12 +37,12 @@ class Body extends Component{
                                 
                             </Card.Body>  
                         </Card>
+                        </NavLink>
                         
                     </div>
                     <div class="how-to-play">HOW TO PLAY</div>
-                    <div class="image">
-                        <img src={equ} alt="Logo" />;
-                    </div>
+                    <img className="image" src={equ} alt="Logo" />
+                    
                 </div>
             </react.Fragment>
         )
