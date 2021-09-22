@@ -1,6 +1,6 @@
 .join-room-body{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
 
 }

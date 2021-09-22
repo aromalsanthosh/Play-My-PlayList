@@ -1,6 +1,5 @@
 
-import React from "react";
-import react,{Component} from "react";
+import React,{Component} from "react";
 import Navigation from "../navigation/Navigation";
 import manIcon from '../../assets/man-icon.png';
 import {Button} from 'react-bootstrap'
@@ -11,32 +10,38 @@ const users = [
     {
         name: 'User 1',
         status: 'Online',
-        image: 'https://picsum.photos/100'
+        image: 'https://picsum.photos/100',
+        songs:'8',
     },
     {
         name: 'user 2',
         status: 'offline',
         image: 'https://picsum.photos/100',
+        songs:'5',
     },
     {
         name: 'User 3',
         status: 'Online',
-        image: 'https://picsum.photos/100'
+        image: 'https://picsum.photos/100',
+        songs:'0',
     },
     {
         name: 'user 4',
         status: 'offline',
         image: 'https://picsum.photos/100',
+        songs:'10',
     },
     {
         name: 'User 5',
         status: 'Online',
-        image: 'https://picsum.photos/100'
+        image: 'https://picsum.photos/100',
+        songs:'10',
     },
     {
         name: 'user 6',
         status: 'offline',
         image: 'https://picsum.photos/100',
+        songs:'10',
     }
 ]
 
@@ -60,9 +65,16 @@ class JoinRoom extends Component{
            <div className="how-to-play-button-container" >
                  <Button className="how-to-play-button" variant="primary">HOW TO PLAY</Button>
            </div>
-           <Lobby users={users}/>
+           
            
        </div>
+       <Lobby users={users}/>
+
+{/* add div */}<div>
+
+    
+</div>
+
        </div>
    </React.Fragment>
         )
