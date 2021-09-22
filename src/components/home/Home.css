@@ -28,8 +28,10 @@
 hr{
     height: 4px !important;
     width:70vw   ;
-    color:rgb(1, 1, 82) !important;
-    background-color:rgb(1, 1, 85) !important;
+    color:#5563e6 !important;
+    background-color:#5563e6 !important;
+    border-color:#5563e6 !important;
+    opacity: 1 !important;
 }
 
 .body-description{
