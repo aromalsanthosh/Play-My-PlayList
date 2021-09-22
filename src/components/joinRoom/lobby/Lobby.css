@@ -1,0 +1,98 @@
+.lobby-container{
+    margin-top: 4vw!important;
+    display:flex;
+    flex-direction: column;
+    margin-left: 10vw !important;
+    width: 80vw;
+    height: auto;
+    background: #F0E0E0;
+    border-radius: 5px;
+    /* position at center of page */
+    margin: 0 auto;
+    padding-top: 2vh;
+    margin-bottom: 3vh !important;
+    
+
+}
+.header{
+    /* align text at the top of div */
+    text-align: center;
+    margin-top: 0px !important;
+    vertical-align: top;
+    padding-bottom: 2vh;
+}
+
+.lobby-users{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2vw;
+    margin-bottom: 2vw;
+}
+
+.lobby-user{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+
+.user-image {
+    /* position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none; */
+    border-radius: 50%;
+}
+.active-user{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 25px;
+    height: 25px;
+    background: green;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.inactive-user{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.username{
+    font-size: 1.5vh;
+    color: #ff1010;
+    padding-top: 0.5vh;
+    /* align text as center*/
+    text-align: center;
+}

@@ -2,6 +2,43 @@
 import React from "react";
 import react,{Component} from "react";
 import Navigation from "../navigation/Navigation";
+import manIcon from '../../assets/man-icon.png';
+import {Button} from 'react-bootstrap'
+import './JoinRoom.css'
+import Lobby from "./lobby/Loby";
+
+const users = [
+    {
+        name: 'User 1',
+        status: 'Online',
+        image: 'https://picsum.photos/100'
+    },
+    {
+        name: 'user 2',
+        status: 'offline',
+        image: 'https://picsum.photos/100',
+    },
+    {
+        name: 'User 3',
+        status: 'Online',
+        image: 'https://picsum.photos/100'
+    },
+    {
+        name: 'user 4',
+        status: 'offline',
+        image: 'https://picsum.photos/100',
+    },
+    {
+        name: 'User 5',
+        status: 'Online',
+        image: 'https://picsum.photos/100'
+    },
+    {
+        name: 'user 6',
+        status: 'offline',
+        image: 'https://picsum.photos/100',
+    }
+]
 
 class JoinRoom extends Component{
     constructor(props){
@@ -11,7 +48,22 @@ class JoinRoom extends Component{
         return(
    <React.Fragment>
        <Navigation id="join-room"/>
-       <p>join Room</p>
+       <div className="join-room-body">
+       <div className="player-how-to-play-wrapper">
+           <div className="player-details-container">
+               <img src={manIcon} alt="icon" className="player-photo"/>
+               <div className="player-details">
+                   <div className="player-role">Player</div>
+                   <div className="player-name">Akshay</div>
+               </div>
+           </div>
+           <div className="how-to-play-button-container" >
+                 <Button className="how-to-play-button" variant="primary">HOW TO PLAY</Button>
+           </div>
+           <Lobby users={users}/>
+           
+       </div>
+       </div>
    </React.Fragment>
         )
     }

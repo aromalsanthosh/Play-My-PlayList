@@ -13,7 +13,7 @@ function App() {
 <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/create-room" component={CreateRoom} />
-            <Route path="/join-room" component={JoinRoom} />
+            <Route path="/join-room" component={JoinRoom} /> 
 </Switch>
 </BrowserRouter>
 </react.Fragment>
@@ -21,3 +21,9 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+

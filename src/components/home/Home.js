@@ -13,10 +13,8 @@ class Body extends Component{
     render(){
         return(
             <react.Fragment>
-                <div class="body-wrapper">
-                    
-                        <img className="home-logo" src={logo} alt="LOGO"/>
-                    
+                <div class="body-wrapper">                    
+                        <img className="home-logo" src={logo} alt="LOGO"/>                    
                     <hr/>
                     <div class="body-description">A multiplayer Social Game to play along with your friends in a private room</div>
                     <div  class="button-container">
@@ -25,7 +23,6 @@ class Body extends Component{
                             <Card.Body>
                                 <Card.Title className="card-title">Create Room</Card.Title>
                                 <Card.Text className="card-text">Play along with <br/>your friends<br/> &#10230;</Card.Text>
-
                             </Card.Body>    
                         </Card>
                         </NavLink>
@@ -33,14 +30,12 @@ class Body extends Component{
                         <Card className="card2 cards">
                             <Card.Body>
                                 <Card.Title className="card-title">Join Room</Card.Title>
-                                <Card.Text className="card-text">Play along with <br/>your friends<br/> &#10230;</Card.Text>
-                                
+                                <Card.Text className="card-text">Play along with <br/>your friends<br/> &#10230;</Card.Text>    
                             </Card.Body>  
                         </Card>
-                        </NavLink>
-                        
+                        </NavLink>    
                     </div>
-                    <div class="how-to-play">HOW TO PLAY</div>
+                    <Button className="how-to-play" variant="dark">HOW TO PLAY</Button>
                     <img className="image" src={equ} alt="Logo" />
                     
                 </div>

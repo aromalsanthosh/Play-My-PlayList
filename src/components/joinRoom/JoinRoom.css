@@ -1,0 +1,91 @@
+.join-room-body{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.player-how-to-play-wrapper{
+    margin-top: 20px;
+    width:100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.player-details-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.player-photo{
+    margin-left: 30px;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+.player-details{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.player-role{
+    font-size: xx-large;
+    color:blue
+}
+.player-name{
+    font-weight: 400;
+}
+
+.how-to-play-button-container{
+    display: flex;
+    justify-content: right;
+    margin-right: 5vw;
+}
+.how-to-play-button{
+    height: 40px;
+    width:auto;
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    .player-details-container{
+        flex-direction: column;
+    
+    }
+
+
+    .player-photo{
+        height: 70px;
+        width:70px;
+        
+    }
+    .player-details{
+        margin-top: 3px;
+        margin-left: 30px;
+    }
+    .player-role{
+        font-size:large;
+        color:blue
+    }
+    .player-how-to-play-wrapper{
+        margin-top: 20px;
+        width:100vw;
+        display: grid;
+        display:flex;
+        flex-direction: column;
+
+    
+    }
+    .how-to-play-button-container{
+        display: flex;
+        justify-content:left;
+        margin-top: 2vh;
+        margin-left: 5vw;
+    }
+
+}
