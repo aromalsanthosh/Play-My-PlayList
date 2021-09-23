@@ -7,6 +7,17 @@
 .heading-create{
     font-size: 3em;
 }
+.roomId-container{
+    display: flex;
+    justify-content: center;
+    margin-left:3vw;
+
+}
+.roomId-copy-button{
+    width:auto;
+    height:30px;
+    margin-top: 2vh;
+}
 
 .form-row-grid{
     display:grid;
@@ -37,7 +48,7 @@
     height:90px;
 }
 
-.generate-passcord{
+.generate-passcode{
     width:90%; 
 }
 .create-button{
@@ -47,6 +58,12 @@
 
 
 @media screen and (max-width: 600px){
+
+    .form-fields{
+      
+        gap:5vh;
+       
+    }
     .form-row-grid{
         display:flex;
         flex-direction: column;

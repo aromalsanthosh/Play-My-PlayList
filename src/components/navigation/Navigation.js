@@ -15,7 +15,7 @@ function Navigation(props)
    Join Room
   </NavLink>}
   {props.id === "join-room" &&
-  <NavLink className="nav-content-right" to='/create-room'>
+  <NavLink className="nav-content-right" to='/'>
    Exit Room
   </NavLink>}
   {props.id === "joined" &&

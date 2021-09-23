@@ -11,44 +11,56 @@ class CreateRoom extends Component{
         this.state={
             roomName:"",
             numberOfParticipents:"",
-            passcord:"",
+            passcode:"",
             rules:"",
             roomId:"",
-            randomPasscord:"",
+            
 
 
         }
+        this.generatePasscode = this.generatePasscode.bind(this);
+        this.copyToClipBoard = this.copyToClipBoard.bind(this);
+        this.copyToClipBoardPass = this.copyToClipBoardPass.bind(this);
+
 
     }
 
     componentDidMount(){
-        // var len = 6;
-        // var char_list =
-        // "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        // for (var i = 0; i < len; i++) {
+        var len = 6;
+        var id="";
+        var char_list =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        for (var i = 0; i < len; i++) {
             
-        // this.state.roomId += char_list.charAt(Math.floor(Math.random() * char_list.length));
-        // }
+        id += char_list.charAt(Math.floor(Math.random() * char_list.length));
+        }
+        this.setState({roomId:id})
     }
     copyToClipBoard(){
+        let text ="";
+        let cb = navigator.clipboard;
         
+            text= this.state.roomId;
+        cb.writeText(text);
+    }
+
+     generatePasscode(){
+        var len = 8;
+        var pass="";
+        var char_list =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrst#@$&";
+        for (var i = 0; i < len; i++) {
+        pass += char_list.charAt(Math.floor(Math.random() * char_list.length));
+        }
+        this.setState({passcode:pass})
+    }
+    copyToClipBoardPass(){ 
+        let text ="";
+        let cb = navigator.clipboard;
     
-        // const cb = navigator.clipboard;
-        // const text = this.state.roomId;
-        // cb.writeText(text);
-        
-        
-
-    }
-
-     generatePasscord(){
-        // var len = 8;
-        // var char_list =
-        // "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrst#@$&";
-        // for (var i = 0; i < len; i++) {
-        // this.state.passcord += char_list.charAt(Math.floor(Math.random() * char_list.length));
-        // }
-    }
+        text= this.state.passcode;
+        cb.writeText(text);
+}
 
     handleChange=(event)=> {
         this.setState({ [event.target.name]: event.target.value });
@@ -62,8 +74,8 @@ class CreateRoom extends Component{
 
            <div className="form-row-grid">
                <div className="heading-create">Create Room</div>
-               <div className="copy-passcord-container" >
-                   <Button className="copy-passcord"  onClick={this.copyToClipBoard()}>{this.state.roomId} </Button>
+               <div className="roomId-container" >
+                   <Button className="roomId-copy-button"  onClick={this.copyToClipBoard}>Room ID:{this.state.roomId} </Button>
                 </div>   
            </div>
            <div className="form-row-grid" >
@@ -98,12 +110,12 @@ class CreateRoom extends Component{
                         <input className="passcord-textbox"
                             required
                             type="text"
-                            name="passcord"
-                            value={this.state.passcord}
+                            name="passcode"
+                            value={this.state.passcode}
                             onChange={this.handleChange}/>
-                        <Button className="copy-passcord">copy</Button>    
+                        <Button className="copy-passcode" onClick={this.copyToClipBoardPass}>copy</Button>    
                     </div>  
-                    <Button className="generate-passcord" onClick={this.generatePasscord()}>Generate Passcord</Button>
+                    <Button className="generate-passcode" onClick={this.generatePasscode}>Generate Passcode</Button>
                </div>
                <div className="form-label-input-grid">
                     <label>Rules:</label>
@@ -128,64 +140,4 @@ class CreateRoom extends Component{
 
 
 
-{/* <div className="room-name-nop-field">
-<label>
-  Room Name:</label>
-  <input
-    className="signup-textbox"
-    required
-    type="text"
-    name="roomName"
-    value={this.state.roomName}
-    onChange={this.handleChange}
-  />
 
-<Button className="room-name-save">Save</Button>
-<label>
-  Number Of Participents:
-  <input
-    className="signup-textbox"
-    type="text"
-    name="numberOfParticipents"
-    value={this.state.numberOfParticipents}
-    onChange={this.handleChange}
-  />
-</label>
-</div>
-<div className="form-name-field">
-<label>
-  Passcord;
-  <input
-    className="create-passcord"
-    required
-    type="password"
-    name="passcord"
-    value={this.state.passcord}
-    onChange={this.handleChange}
-  />
-  <Button className="copy-passcord">copy</Button>
-  <Button className="generate-passcord">Generate Passcord</Button>
-</label>
-
-<label>
-  Rules:
-  <input
-    className="signup-textbox"
-    type="text"
-    name="rules"
-    value={this.state.rules}
-    onChange={this.handleChange}
-  />
-</label>
-
-</div>
-
-
-
-<div className="form-name-field">
-<input
-  className="create-button"
-  type="submit"
-  value="Create"
-/>
-</div> */}
