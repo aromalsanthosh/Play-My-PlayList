@@ -70,10 +70,20 @@ class JoinRoom extends Component{
        </div>
        <Lobby users={users}/>
 
-{/* add div */}<div>
-
-    
-</div>
+{/* add div */}
+        <div className="song-container">
+            <div className="addsong">
+                {/* an input field to paste link of songs with a button*/}
+                <div className="add-song-input-container">
+                    <input type="text" className="add-song-input" placeholder="Paste Your Link Here"
+                    />
+                    <Button className="add-song-button" variant="primary">Add Song</Button>
+                </div>
+                <div className="added-songs">
+                    
+                </div>
+            </div>
+        </div>
 
        </div>
    </React.Fragment>

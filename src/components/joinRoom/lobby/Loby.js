@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import './Lobby.css'
-
+import activeicon from '../../../assets/active.png';
+import offlineicon from '../../../assets/offline.png';
 class Lobby extends Component{
     constructor(props){
         super(props);
@@ -17,7 +18,7 @@ class Lobby extends Component{
                             <div>
                                  <div className="lobby-user" key={index}>
                                     <img className="user-image" alt="userimage" src={user.image} />
-                                    {user.status==="Online"?<div className="active-user">   </div>:<div className="inactive-user">    </div>}
+                                    {user.status==="Online"?<div className="active-user"> <img src={activeicon} alt="user active"/>  </div>:<div className="inactive-user">  <img src={offlineicon} alt="user offline"/>  </div>}
                             </div>
                             <p>{user.name}</p>
                             <p>{user.songs} songs added</p>
