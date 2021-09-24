@@ -100,6 +100,13 @@ html,body {
     color: black !important;
 }
 
+.start-button:focus{
+background: #F2BE08 !important;
+color: black !important;
+}
+
+
+
 @media screen and (max-width: 400px){
 
     .player-details-container{

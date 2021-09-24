@@ -5,6 +5,7 @@ import manIcon from '../../assets/man-icon.png';
 import {Button} from 'react-bootstrap'
 import './JoinRoom.css'
 import Lobby from "./lobby/Loby";
+import SongPreview from "./SongPreview/SongPreview";
 
 const users = [
     {
@@ -80,7 +81,7 @@ class JoinRoom extends Component{
                     <Button className="add-song-button" variant="primary">ADD</Button>
                 </div>
                 <div className="added-songs">
-                    
+                    <SongPreview title="Stay - Justin Bieber" duration="04:00"/>
                 </div>
             </div>
         </div>
