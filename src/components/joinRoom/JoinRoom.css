@@ -83,6 +83,21 @@ html,body {
     color: black;
     height: 58px;
     margin-left: 20px;
+    width: 177px;
+}
+
+.start-button{
+    width: 100%;
+    border-radius: 0;
+    height: 76px;
+    font-size: 36px;
+    color: black;
+    background: #F2BE08;
+}
+
+.start-button:hover{
+    background: #c89f0a !important;
+    color: black !important;
 }
 
 @media screen and (max-width: 400px){

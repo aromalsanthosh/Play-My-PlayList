@@ -77,12 +77,15 @@ class JoinRoom extends Component{
                 <div className="add-song-input-container">
                     <input type="text" className="add-song-input" placeholder="Paste Your Link Here"
                     />
-                    <Button className="add-song-button" variant="primary">Add Song</Button>
+                    <Button className="add-song-button" variant="primary">ADD</Button>
                 </div>
                 <div className="added-songs">
                     
                 </div>
             </div>
+        </div>
+        <div className="startbutton">
+            <Button className="start-button" variant="primary">START GAME</Button>
         </div>
 
        </div>
