@@ -75,7 +75,7 @@ class CreateRoom extends Component{
            <div className="form-row-grid">
                <div className="heading-create">Create Room</div>
                <div className="roomId-container" >
-                   <Button className="roomId-copy-button"  onClick={this.copyToClipBoard}>Room ID:{this.state.roomId} </Button>
+                   <Button className="roomId-copy-button"  onClick={this.copyToClipBoard}>Room ID:{this.state.roomId} <i class="fa fa-copy"></i></Button>
                 </div>   
            </div>
            <div className="form-row-grid" >
@@ -113,7 +113,7 @@ class CreateRoom extends Component{
                             name="passcode"
                             value={this.state.passcode}
                             onChange={this.handleChange}/>
-                        <Button className="copy-passcode" onClick={this.copyToClipBoardPass}>copy</Button>    
+                        <Button className="copy-passcode" onClick={this.copyToClipBoardPass}><i class="fa fa-copy" style={{fontSize:"28px"}}></i></Button>    
                     </div>  
                     <Button className="generate-passcode" onClick={this.generatePasscode}>Generate Passcode</Button>
                </div>
