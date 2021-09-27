@@ -1,7 +1,7 @@
 # Play-My-PlayList
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1c5f6286-93fb-4dc1-9dd4-bab1dce14413/deploy-status)](https://app.netlify.com/sites/playmyplaylist/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a307d70d-81c1-4d13-88f8-125e50690dd4/deploy-status)](https://app.netlify.com/sites/quizzical-swartz-49e47a/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
