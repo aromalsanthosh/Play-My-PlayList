@@ -26,7 +26,7 @@ class Body extends Component{
                             </Card.Body>    
                         </Card>
                         </NavLink>
-                        <NavLink to='/join-room'>
+                        <NavLink to='/login-page'>
                         <Card className="card2 cards">
                             <Card.Body>
                                 <Card.Title className="card-title">Join Room</Card.Title>

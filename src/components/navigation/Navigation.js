@@ -11,17 +11,18 @@ function Navigation(props)
     <img  className="nav-logo" src={logo} alt="LOGO"/>
   </NavLink>
   {props.id === "create-room" &&
-  <NavLink className="nav-content-right" to='/join-room'>
+  <NavLink className="nav-content-right" to='/login-page'>
    Join Room
   </NavLink>}
   {props.id === "join-room" &&
   <NavLink className="nav-content-right" to='/'>
    Exit Room
   </NavLink>}
-  {props.id === "joined" &&
-  <NavLink className="nav-content-right" to='/join-room'>
-   Exit
+  {props.id === "login-page" &&
+  <NavLink className="nav-content-right" to='/create-room'>
+   Create Room
   </NavLink>}
+
  </div>
 
   )

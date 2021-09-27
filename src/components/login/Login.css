@@ -1,0 +1,7 @@
+.login-form-fields{
+    display:flex;
+    flex-direction: column;
+    gap:10vh;
+    justify-content: center;
+    width: 700px;
+}

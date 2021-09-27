@@ -27,7 +27,7 @@
 .form-row-grid-input{
     
     display: grid;
-    grid-template-columns: 80% 10%;
+    grid-template-columns: 70% 20%;
 }
 
 

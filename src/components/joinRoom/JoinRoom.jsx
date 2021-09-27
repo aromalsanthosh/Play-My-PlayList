@@ -70,10 +70,9 @@ class JoinRoom extends Component{
            
        </div>
        <Lobby users={users}/>
-
-{/* add div */}
-        <div className="song-container">
-            <div className="addsong">
+       <div className="song-container">
+           <h3>Add your song here...</h3>
+            <div className="add-song">
                 {/* an input field to paste link of songs with a button*/}
                 <div className="add-song-input-container">
                     <input type="text" className="add-song-input" placeholder="Paste Your Link Here"
