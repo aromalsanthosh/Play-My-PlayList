@@ -79,12 +79,12 @@ class JoinRoom extends Component{
                     />
                     <Button className="add-song-button" variant="primary">ADD</Button>
                 </div>
-                <div className="added-songs">
+            </div>
+            <div className="added-songs">
                     <SongPreview title="Stay - Justin Bieber" duration="04:00"/>
-                </div>
             </div>
         </div>
-        <div className="startbutton">
+        <div className="startbutton"> 
             <Button className="start-button" variant="primary">START GAME</Button>
         </div>
 

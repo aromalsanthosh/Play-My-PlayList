@@ -27,7 +27,8 @@
 .form-row-grid-input{
     
     display: grid;
-    grid-template-columns: 70% 20%;
+    grid-template-columns: 85% 15%;
+    
 }
 
 
@@ -64,11 +65,33 @@
         gap:5vh;
        
     }
+    .heading-create{
+        font-size: 2em;
+    }
     .form-row-grid{
         display:flex;
         flex-direction: column;
-        
+    
         justify-content: center;
     }
+    .form-label-input-grid{
+
+        width:90%
+    }
+    .number-of-participents-textbox{
+        width: 100%;
+    }
+    .generate-passcode{
+        width:100%; 
+    }
+
+    .rule-textbox{
+        width:100%;
+    }
+    .create-button{
+        margin-left: 20vw;
+        width:60vw;
+    }
+
 
 }

@@ -81,7 +81,7 @@ class CreateRoom extends Component{
            <div className="form-row-grid" >
                <div className="form-label-input-grid">
                <label>Room Name:</label>
-                 <div className="form-row-grid-input" >
+                 
                  <input className="signup-textbox"
                             required
                             type="text"
@@ -89,8 +89,8 @@ class CreateRoom extends Component{
                             value={this.state.roomName}
                             onChange={this.handleChange}/>
                     
-                    <Button className="room-name-save">Save</Button>
-                 </div>   
+                    
+                  
 
                </div>
                <div className="form-label-input-grid">
@@ -99,9 +99,22 @@ class CreateRoom extends Component{
                             required
                             type="text"
                             name="numberOfParticipents"
+                            list="mylist"
                             value={this.state.numberOfParticipents}
                             onChange={this.handleChange}/>
                </div>
+                <datalist id="mylist">
+                    <option value="2"/>
+                    <option value="3"/>
+                    <option value="4"/>
+                    <option value="5"/>
+                    <option value="6"/>
+                    <option value="7"/>
+                    <option value="8"/>
+                    <option value="9"/>
+                    <option value="10"/>
+                    
+                </datalist>
            </div>
            <div className="form-row-grid" >
                <div className="form-label-input-grid">
@@ -132,6 +145,7 @@ class CreateRoom extends Component{
                 > Create Room</Button>
                
     </form>
+
    </React.Fragment>
         )
     }

@@ -5,3 +5,42 @@
     justify-content: center;
     width: 700px;
 }
+
+
+.eye-icon span{
+    height: 0px !important;
+    padding-top: 0 !important;
+}
+.login-row-grid-input{
+    
+    display: flex;
+    
+    
+}
+.login-textbox{
+    width: 400px;
+}
+.login-page-button{
+    width:90px !important;
+    height:30px;
+}
+.login-button{
+    margin-left: 35vw;
+    width:30vw;
+}
+
+@media screen and (max-width: 650px){
+    .login-form-fields{
+      
+        width: 90vw;
+    } 
+
+    .login-row-grid-input{
+    
+        display: flex;    
+    }
+    .login-button{
+        margin-left: 20vw;
+        width:60vw;
+    }
+}

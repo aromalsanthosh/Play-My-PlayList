@@ -2,6 +2,10 @@ import React,{Component} from "react";
 import Navigation from "../navigation/Navigation";
 import {Button} from 'react-bootstrap';
 import './Login.css'
+import Visibility from "@material-ui/icons/Visibility";
+import IconButton from "@material-ui/core/IconButton";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
+
 
 class Login extends Component{
     constructor(props){
@@ -9,14 +13,17 @@ class Login extends Component{
         this.state={
             passcode:"",    
             roomId:"",
+            showPassword: false,
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClickShowPassword=this.handleClickShowPassword.bind(this)
     };
     handleChange=(event)=> {
         this.setState({ [event.target.name]: event.target.value });
       }
-      handleSubmit(event){
+
+     handleSubmit(event){
         event.preventDefault();
         var roomData = {
          passcode: this.state.passcode,
@@ -24,6 +31,10 @@ class Login extends Component{
      }
      this.props.history.push("/join-room")
     }
+     handleClickShowPassword = () => {
+        this.setState({showPassword: !this.state.showPassword });
+      };
+
     render(){
         return(
             <React.Fragment>
@@ -37,34 +48,40 @@ class Login extends Component{
           <div className="" >
               <div className="form-label-input-grid">
               <label>Room Id:</label>
-                <div className="form-row-grid-input" >
-                <input className="signup-textbox"
+                <div className="login-row-grid-input" >
+                <input className="login-textbox"
                            required
                            type="text"
                            name="roomId"
                            value={this.state.roomId}
                            onChange={this.handleChange}/>
                    
-                   <Button className="room-name-save">Check</Button>
+                   <Button className="login-page-button">Check</Button>
                 </div>   
 
               </div>
               <div className="form-label-input-grid">
                    <label>Passcode:</label>
-                   <div className="form-row-grid-input" >
-                    <input className="signup-textbox"
+                   <div className="login-row-grid-input" >
+                    <input className="login-textbox"
                            required
-                           type="text"
-                           name="passcode"
+                           type={this.state.showPassword ? "text" : "password"}
+                           name="passcode"  
                            value={this.state.passcode}
                            onChange={this.handleChange}/>
                    
-                   <Button className="room-name-save">show</Button>
+                   <Button className="login-page-button">
+                        <IconButton className="eye-icon"
+                            onClick={this.handleClickShowPassword}
+                             >
+                    {this.state.showPassword ? <Visibility /> : <VisibilityOff />}
+                        </IconButton>
+                    </Button>
                 </div> 
               </div>
 
           </div>
-          <Button  className="create-button"
+          <Button  className="login-button"
                type="submit"
                > Join Room</Button>
               

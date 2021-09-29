@@ -2,13 +2,17 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    width:100%;
+    width:90%;
     margin-top: 3vh;
     
 }
 
 .song-details{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: flex;
+    justify-content: center;
     align-items:center;
     gap:3px;
     width:80%;

@@ -57,8 +57,6 @@ html,body {
 }
 
 .song-container{
-    margin:0px;
-    padding: 0;
     width: 100vw !important; 
     background: #4757EC;
     height: auto;
@@ -81,8 +79,9 @@ html,body {
 }
 .add-song-input-container{
     display: flex;
-    justify-content: space-between;
+    gap:3px;
     width: 90%;
+    justify-content: center;
 
 }
 
@@ -98,7 +97,7 @@ html,body {
     border-radius: 5px;
     color: black;
     /* height: 58px; */
-    width: 15%;
+    width:60px
 }
 .added-songs{
     display: flex;
@@ -109,8 +108,8 @@ html,body {
 .start-button{
     width: 100%;
     border-radius: 0;
-    height: 76px;
-    font-size: 36px;
+    height: 40px;
+    font-size: 26px;
     color: black;
     background: #F2BE08;
 }
