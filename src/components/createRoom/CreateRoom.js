@@ -78,6 +78,7 @@ class CreateRoom extends Component{
                    <Button className="roomId-copy-button"  onClick={this.copyToClipBoard}>Room ID:{this.state.roomId} <i class="fa fa-copy"></i></Button>
                 </div>   
            </div>
+           
            <div className="form-row-grid" >
                <div className="form-label-input-grid">
                <label>Room Name:</label>
@@ -94,7 +95,7 @@ class CreateRoom extends Component{
 
                </div>
                <div className="form-label-input-grid">
-                    <label>Number Of Participents:</label>
+                    <label>Number Of Participants:</label>
                     <input className="number-of-participents-textbox"
                             required
                             type="text"
@@ -118,7 +119,7 @@ class CreateRoom extends Component{
            </div>
            <div className="form-row-grid" >
                <div className="form-label-input-grid">
-                    <label>Passcord:</label>
+                    <label>Password:</label>
                     <div className="form-row-grid-input" >
                         <input className="passcord-textbox"
                             required

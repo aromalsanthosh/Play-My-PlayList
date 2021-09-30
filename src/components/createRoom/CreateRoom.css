@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    
+}
+
 .form-fields{
     display:flex;
     flex-direction: column;
     gap:10vh;
     justify-content: center;
+    /* background: url('../../assets/bg-music.png');
+    background-repeat: no-repeat;
+    background-size: 70%; */
 }
 .heading-create{
     font-size: 3em;
@@ -51,10 +61,16 @@
 
 .generate-passcode{
     width:90%; 
+    background: #4757EC;
 }
 .create-button{
     margin-left: 35vw;
     width:30vw;
+    background: #4757EC;
+}
+
+.copy-passcode{
+    background: #4757EC;
 }
 
 
