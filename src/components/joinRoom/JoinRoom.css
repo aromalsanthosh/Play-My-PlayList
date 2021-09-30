@@ -79,7 +79,6 @@ html,body {
 }
 .add-song-input-container{
     display: flex;
-    gap:3px;
     width: 90%;
     justify-content: center;
 
@@ -87,8 +86,9 @@ html,body {
 
 .add-song-input{
     width: 80%;
-    /* height: 58px; */
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-width: 0px !important;
    
 }
 
@@ -96,13 +96,21 @@ html,body {
     background: #FFFFFF;
     border-radius: 5px;
     color: black;
-    /* height: 58px; */
+   margin-left: 3px;
     width:60px
 }
+.join-page-icon{
+    display: flex;
+    background: #FFFFFF;
+    color: black;
+    width:20px;
+    align-items: center;
+}
+
 .added-songs{
     display: flex;
-    justify-content: space-between;
     width: 90%;
+    justify-content: center;;
 }
 
 .start-button{

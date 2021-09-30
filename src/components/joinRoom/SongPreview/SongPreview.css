@@ -4,6 +4,7 @@
     flex-direction: row;
     width:90%;
     margin-top: 3vh;
+    justify-content: center;
     
 }
 
@@ -12,12 +13,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: flex;
-    justify-content: center;
     align-items:center;
     gap:3px;
-    width:80%;
+    width:83.2%;
     height: 38px;
-    border-radius: 5px;
     background: white;
     border-top-left-radius:29px;
     border-bottom-left-radius: 29px;
@@ -36,5 +35,6 @@
     background: #FFFFFF;
     border-radius: 5px;
     color: black;
-    width: 15%;
+    width: 60px;
+    margin-left: 3px;
 }

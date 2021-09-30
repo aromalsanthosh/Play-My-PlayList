@@ -11,8 +11,10 @@ function SongPreview(props) {
             <div className="song-details">
             <img className="song-icon"src={songIcon} alt="icon-song" />
                 <p>{props.title} Fetched From Link {props.duration}</p>
+                
             </div>
-            <Button className="remove-song-button"><FaTrash/> <FaPlay/> <FaUpload/> </Button>
+            <div className="join-page-icon"><FaPlay/></div>
+            <Button className="remove-song-button"><FaTrash/> </Button>
         </div>
         
     )

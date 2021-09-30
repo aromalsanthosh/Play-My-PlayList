@@ -6,6 +6,8 @@ import {Button} from 'react-bootstrap'
 import './JoinRoom.css'
 import Lobby from "./lobby/Loby";
 import SongPreview from "./SongPreview/SongPreview";
+import {  FaUpload } from 'react-icons/fa';
+
 
 const users = [
     {
@@ -77,6 +79,7 @@ class JoinRoom extends Component{
                 <div className="add-song-input-container">
                     <input type="text" className="add-song-input" placeholder="Paste Your Link Here"
                     />
+                    <div className="join-page-icon">< FaUpload/></div>
                     <Button className="add-song-button" variant="primary">ADD</Button>
                 </div>
             </div>

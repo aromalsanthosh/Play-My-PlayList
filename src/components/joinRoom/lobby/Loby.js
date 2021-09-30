@@ -18,10 +18,10 @@ class Lobby extends Component{
                             <div>
                                  <div className="lobby-user" key={index}>
                                     <img className="user-image" alt="userimage" src={user.image} />
-                                    {user.status==="Online"?<div className="active-user"> <img src={activeicon} alt="user active"/>  </div>:<div className="inactive-user">  <img src={offlineicon} alt="user offline"/>  </div>}
+                                    <div className="user-status">  {user.status==="Online"? <img className="status-icon" src={activeicon} alt="user active"/>  :  <img className="status-icon" src={offlineicon} alt="user offline"/>  }</div>
                             </div>
-                            <p>{user.name}</p>
-                            <p>{user.songs} songs added</p>
+                            <p className="username">{user.name}</p>
+                            <p className="username">{user.songs} songs added</p>
                             </div>
                         )
                     })}
