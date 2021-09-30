@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    
+}
+
 .login-form-fields{
     display:flex;
     flex-direction: column;
@@ -10,6 +17,8 @@
 .eye-icon span{
     height: 0px !important;
     padding-top: 0 !important;
+    
+    color: aliceblue;
 }
 .login-row-grid-input{
     
@@ -22,11 +31,20 @@
 }
 .login-page-button{
     width:90px !important;
-    height:30px;
+    height:40px;
+    background: #4757EC;
+    margin-left: 0.5vw;
+
 }
 .login-button{
     margin-left: 35vw;
     width:30vw;
+    background: #4757EC;
+
+}
+label{
+    margin-bottom: -15px;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 650px){
